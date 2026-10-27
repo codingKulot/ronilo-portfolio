@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ronilo J. Jinon Jr. | QA Engineer – Manual, API &amp; Playwright Testing | Davao City, Philippines</title>
+<meta name="description" content="Ronilo J. Jinon Jr. – QA Engineer (Quality Assurance Engineer) in Davao City, Philippines with 6+ years of experience testing web and mobile applications: manual testing, test planning, test case design, defect management, API testing with Postman, SQL database validation, and test automation with Playwright in Agile Scrum teams.">
+<meta name="keywords" content="QA Engineer, Quality Assurance Engineer, Software QA Engineer, Software Tester, Manual Testing, Test Planning, Test Case Design, Defect Management, API Testing, API Validation, Postman, Playwright, Test Automation, E2E Testing, Regression Testing, Functional Testing, Smoke Testing, User Acceptance Testing, UAT, Exploratory Testing, Cross-Browser Testing, BrowserStack, SQL, Jira, Git, GitHub, Claude, AI-Assisted Testing, TestFlight, Google Play Console, Mobile App Testing, iOS Testing, Android Testing, Agile, Scrum, Fintech, GCash, Davao City, Philippines">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ronilo J. Jinon Jr.">
+<meta name="theme-color" content="#0B0B0D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ronilo J. Jinon Jr. – QA Engineer">
+<meta property="og:description" content="QA Engineer with 6+ years of experience in manual testing, API testing and Playwright test automation for web and mobile applications, including production releases for GCash.">
+<meta property="og:image" content="assets/photo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B0D'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='800' font-size='30' fill='%23F97316'%3ERJ%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ronilo J. Jinon Jr.",
+  "jobTitle": "QA Engineer",
+  "description": "Quality Assurance Engineer experienced in manual testing, test planning, test case design, defect management and API validation for web and mobile applications.",
+  "email": "mailto:ronilo29.career@gmail.com",
+  "telephone": "+63-926-428-5823",
+  "address": { "@type": "PostalAddress", "addressLocality": "Davao City", "addressCountry": "PH" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "STI College of Davao" },
+  "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Bachelor of Science in Computer Engineering" },
+  "knowsAbout": ["Manual Testing","Test Planning","Test Case Design","Defect Management","API Testing","Functional Testing","Regression Testing","Smoke Testing","User Acceptance Testing","Exploratory Testing","Cross-Browser Testing","Test Automation","Playwright","Postman","SQL","Jira","Git","GitHub","BrowserStack","Figma","Claude","TestFlight","Google Play Console","Mobile App Testing","Agile Scrum"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#F97316; --accent-soft:#FB923C; --accent-light:#FDBA74;
+  --bg:#0B0B0D; --bg-2:#111114; --surface:#141417; --surface-2:#1C1C20;
+  --line:#1F1F23; --line-2:#27272A; --line-3:#3F3F46;
+  --text:#F4F4F5; --text-2:#C4C4CC; --text-3:#A1A1AA;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,sans-serif;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+main{overflow-x:clip}
+a{color:var(--accent-soft);text-decoration:none}
+a:hover{color:var(--accent-light)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--bg);padding:10px 16px;border-radius:8px;z-index:100;font-weight:600}
+.skip:focus{left:8px}
+.accent{color:var(--accent)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* progress + header */
+.progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,13,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:background-color .3s,box-shadow .3s}
+.site-header.scrolled{background:rgba(11,11,13,.97);box-shadow:0 10px 30px -12px rgba(0,0,0,.85)}
+.nav{display:flex;align-items:center;justify-content:flex-end;gap:16px;min-height:72px}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin:0;padding:0}
+.nav-link{color:#E4E4E7;font-size:15px;font-weight:500;padding:6px 0;background-image:linear-gradient(var(--accent),var(--accent));background-repeat:no-repeat;background-position:0 100%;background-size:0 2px;transition:background-size .3s,color .3s}
+.nav-link:hover,.nav-link.active{color:#fff;background-size:100% 2px}
+.menu-toggle{display:none;width:44px;height:44px;border:1px solid var(--line-3);border-radius:10px;background:transparent;color:var(--text);cursor:pointer;align-items:center;justify-content:center}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 26px;border-radius:8px;font:inherit;font-size:16px;font-weight:600;cursor:pointer;border:1.5px solid var(--accent);background:var(--accent);color:var(--bg);transition:transform .25s var(--ease),box-shadow .25s,background-color .25s,color .25s}
+.btn:hover{color:var(--bg);transform:translateY(-3px);box-shadow:0 12px 28px -10px rgba(249,115,22,.65)}
+.btn:active{transform:translateY(0)}
+.btn-ghost{background:transparent;color:var(--text)}
+.btn-ghost:hover{color:var(--text);background:rgba(249,115,22,.12)}
+.btn-sm{min-height:44px;padding:10px 20px;font-size:15px}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding-block:88px 96px}
+.hero-text{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.eyebrow{margin:0;font-size:14px;font-weight:600;letter-spacing:.18em;color:var(--accent-soft);text-transform:uppercase}
+.hero .eyebrow{color:#D4D4D8;font-size:15px}
+.hero h1{margin:0;font-size:clamp(42px,7vw,64px);line-height:1.05;font-weight:800;letter-spacing:-.01em}
+.role{margin:0;font-size:clamp(26px,4vw,36px);font-weight:700;color:var(--accent-soft);min-height:1.3em}
+.caret{display:inline-block;margin-left:2px;animation:caret 1s steps(1) infinite}
+@keyframes caret{0%,49%{opacity:1}50%,100%{opacity:0}}
+.lead{margin:0;max-width:560px;font-size:17px;line-height:1.75;color:var(--text-2)}
+.actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.socials{display:flex;gap:12px;margin-top:12px}
+.social{width:44px;height:44px;border:1px solid var(--line-3);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--accent-soft);transition:transform .25s,background-color .25s,color .25s,border-color .25s}
+.social:hover{transform:translateY(-3px);background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.hero-photo{flex:1 1 360px;min-width:0;display:flex;justify-content:center}
+.photo-wrap{position:relative;width:100%;max-width:440px;padding:22px}
+.orbit{position:absolute;inset:0;border:2px dashed var(--accent);border-radius:50%;opacity:.5}
+.orbit::before{content:"";position:absolute;top:-7px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:50%;background:var(--accent)}
+.photo{position:relative;width:100%;aspect-ratio:1/1;border-radius:50%;border:4px solid var(--accent);overflow:hidden;background:#18181B}
+.photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:30%;background:var(--accent);z-index:0}
+.photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--text-3);z-index:1}
+.photo-placeholder span{font-size:14px;font-weight:600;letter-spacing:.08em}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:2}
+
+/* stats */
+.band{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;padding:36px 24px}
+.stat{display:flex;flex-direction:column;gap:4px}
+.stat strong{font-size:40px;font-weight:800;color:var(--accent);line-height:1.2}
+.stat span{font-size:15px;color:var(--text-2)}
+
+/* sections */
+section{scroll-margin-top:84px}
+.section{padding-block:104px}
+.sec-head{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center;margin-bottom:48px}
+.sec-head h2,.h2{margin:0;font-size:clamp(32px,5vw,44px);line-height:1.15;font-weight:800}
+.sec-head h2::after{content:"";display:block;width:64px;height:4px;border-radius:2px;background:var(--accent);margin:18px auto 0;transform:scaleX(0);transition:transform .8s var(--ease) .25s}
+.sec-head.in h2::after{transform:scaleX(1)}
+
+.about{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
+.about-title{flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.about-body{flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:20px;font-size:17px;line-height:1.8;color:var(--text-2)}
+.about-body p{margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
+.fact{background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:18px 20px;line-height:1.5}
+.fact small{display:block;font-size:13px;color:var(--text-3)}
+.fact b{display:block;font-size:16px;font-weight:600;color:var(--text);margin-top:4px}
+.fact span{font-size:14px;color:var(--text-2)}
+
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid-sm{gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+.card{background:var(--surface);border:1px solid var(--line-2);border-radius:16px;transition:transform .35s var(--ease),border-color .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 22px 44px -22px rgba(249,115,22,.5)}
+.service{background:var(--bg);padding:32px;display:flex;flex-direction:column;gap:14px}
+.service h3{margin:0;font-size:21px;font-weight:700}
+.service p{margin:0;font-size:15px;line-height:1.7;color:var(--text-2)}
+.ico{width:52px;height:52px;border-radius:12px;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;transition:transform .35s var(--ease)}
+.card:hover .ico{transform:rotate(-8deg) scale(1.08)}
+
+.timeline{display:flex;flex-direction:column;gap:24px;max-width:900px;margin:0 auto}
+.job{display:flex;flex-wrap:wrap;gap:16px 32px;padding:32px}
+.job-meta{flex:1 1 200px;display:flex;flex-direction:column;gap:8px}
+.job-meta h3{margin:4px 0 0;font-size:21px;font-weight:700}
+.job-meta span{font-size:15px;color:var(--text-3)}
+.pill{align-self:flex-start;white-space:nowrap;border:1px solid var(--accent);color:var(--text);font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px}
+.pill.solid{background:var(--accent);color:var(--bg)}
+.job ul{flex:3 1 420px;margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.65;color:var(--text-2)}
+.job ul li::marker{color:var(--accent)}
+.edu{display:flex;flex-wrap:wrap;gap:16px 32px;border:1px dashed var(--line-3);border-radius:16px;padding:28px 32px}
+.edu div{flex:1 1 200px}
+.edu h3{margin:8px 0 0;font-size:21px;font-weight:700}
+.edu p{flex:3 1 420px;margin:0;font-size:16px;color:var(--text-2);align-self:center}
+
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;margin:0 auto 40px;padding:0;max-width:960px}
+.chips li{font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid var(--line-3);color:#E4E4E7;background:var(--bg);transition:border-color .25s,color .25s}
+.chips li:hover{border-color:var(--accent);color:#fff}
+.sub-title{margin:0 0 20px;font-size:20px;font-weight:700;text-align:center}
+.job-meta .company{font-size:15px;color:var(--text-2);font-weight:500}
+.tool{background:var(--bg);border-radius:14px;padding:20px;display:flex;gap:16px;align-items:flex-start}
+.logo-tile{flex:0 0 auto;width:52px;height:52px;border-radius:12px;background:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 2px transparent;transition:transform .35s var(--ease),box-shadow .35s}
+.logo-tile img{width:30px;height:30px;object-fit:contain}
+.logo-tile svg{width:28px;height:28px;color:#3F3F46}
+.logo-tile img.crop-left{object-fit:cover;object-position:left center}
+.card:hover .logo-tile{transform:rotate(-6deg) scale(1.08);box-shadow:0 0 0 2px var(--accent)}
+.tool b{display:block;font-size:17px;font-weight:700}
+.tool span{display:block;font-size:14px;line-height:1.55;color:#B4B4BC;margin-top:4px}
+
+.project{overflow:hidden;display:flex;flex-direction:column}
+.shot{height:190px;background:var(--surface-2);border-bottom:3px solid var(--accent);display:flex;align-items:center;justify-content:center;color:var(--text-3);overflow:hidden}
+.shot svg{transition:transform .5s var(--ease)}
+.card:hover .shot svg{transform:scale(1.12) rotate(-4deg)}
+.shot .co-logo{display:flex;align-items:center;justify-content:center;background:#FFFFFF;border-radius:22px;padding:10px;box-shadow:0 14px 30px -14px rgba(0,0,0,.8);transition:transform .5s var(--ease)}
+.shot .co-logo img{display:block;width:84px;height:84px;object-fit:contain;border-radius:16px}
+.shot .co-logo.wide{padding:18px 26px}
+.shot .co-logo.wide img{width:150px;height:57px;border-radius:0}
+.card:hover .shot .co-logo{transform:scale(1.08) rotate(-3deg)}
+.shot .fallback{display:none}
+.shot.nologo .co-logo{display:none}
+.shot.nologo .fallback{display:block}
+.project-body h3 a{color:var(--text)}
+.project-body h3 a:hover{color:var(--accent-light)}
+.visit{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:var(--accent-soft)}
+.visit svg{transition:transform .25s var(--ease)}
+.visit:hover svg{transform:translate(3px,-3px)}
+.project-body{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.project-body h3{margin:0;font-size:20px;font-weight:700}
+.project-body p{margin:0;font-size:15px;line-height:1.65;color:var(--text-2)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.tag{font-size:12px;font-weight:600;padding:5px 10px;border-radius:6px;background:var(--line-2);color:#E4E4E7;transition:background-color .25s}
+.card:hover .tag{background:#34302C}
+
+.attain{background:var(--accent);border-radius:20px;padding:48px 40px;display:flex;flex-wrap:wrap;gap:32px;color:var(--bg)}
+.attain h2{flex:1 1 260px;margin:0;font-size:34px;line-height:1.2;font-weight:800}
+.attain ul{flex:2 1 480px;margin:0;padding-left:20px;display:flex;flex-direction:column;gap:12px;font-size:17px;line-height:1.6;font-weight:500}
+
+.contact{display:flex;flex-wrap:wrap;gap:56px}
+.contact-info{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.contact-info > p{margin:0;font-size:16px;line-height:1.7;color:var(--text-2)}
+.contact-list{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.contact-item{display:flex;align-items:center;gap:14px;color:var(--text);font-size:16px;word-break:break-word}
+.contact-item:hover{color:var(--accent-light)}
+.contact-item .ci{flex:0 0 auto;width:44px;height:44px;border-radius:10px;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;transition:transform .25s}
+a.contact-item:hover .ci{transform:translateY(-3px)}
+.form{flex:1 1 420px;min-width:0;background:var(--bg);border:1px solid var(--line-2);border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:18px}
+.form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:500;color:#D4D4D8}
+.field input,.field textarea{background:var(--surface);border:1px solid var(--line-3);border-radius:8px;padding:12px 14px;color:var(--text);font:inherit;font-size:15px;min-height:44px;transition:border-color .25s,box-shadow .25s}
+.field textarea{resize:vertical;min-height:140px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(249,115,22,.2)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-status{margin:0;font-size:15px;min-height:1.5em;color:var(--text-2)}
+.form-status.ok{color:#4ADE80}
+.form-status.err{color:#FCA5A5}
+
+.site-footer{border-top:1px solid var(--line)}
+.footer{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;padding:28px 24px;font-size:14px;color:var(--text-3)}
+.to-top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -8px rgba(249,115,22,.6);opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s,transform .3s;z-index:40}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{color:var(--bg)}
+
+/* motion */
+.js .intro{opacity:0;transform:translateY(24px);animation:introUp .9s var(--ease) forwards}
+.js .d1{animation-delay:.05s}.js .d2{animation-delay:.15s}.js .d3{animation-delay:.25s}.js .d4{animation-delay:.35s}.js .d5{animation-delay:.45s}.js .d6{animation-delay:.55s}
+@keyframes introUp{to{opacity:1;transform:none}}
+.js .photo-in{opacity:0;scale:.86;animation:popIn 1s var(--ease) .3s forwards}
+@keyframes popIn{to{opacity:1;scale:1}}
+.float{animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.orbit{animation:spin 28s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+.js .reveal{opacity:0;translate:0 40px;transition:opacity .8s var(--ease),translate .8s var(--ease),transform .35s var(--ease),border-color .35s,box-shadow .35s}
+.js .reveal.left{translate:-48px 0}
+.js .reveal.right{translate:48px 0}
+.js .reveal.zoom{translate:0 0;scale:.92;transition:opacity .8s var(--ease),scale .8s var(--ease)}
+.js .reveal.in{opacity:1;translate:0 0;scale:1}
+
+/* responsive */
+@media (max-width:860px){
+  .menu-toggle{display:inline-flex}
+  .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:rgba(11,11,13,.98);border-bottom:1px solid var(--line);padding:8px 24px 20px;display:none}
+  .nav-links.open{display:flex}
+  .nav-links li{border-bottom:1px solid var(--line)}
+  .nav-links li:last-child{border:0;padding-top:16px}
+  .nav-link{display:block;padding:14px 0}
+  .nav-links .btn{width:100%}
+  .hero{padding-block:56px 72px;gap:40px}
+  .section{padding-block:80px}
+  .job,.service,.form{padding:24px}
+  .attain{padding:36px 24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .intro,.js .photo-in,.js .reveal{opacity:1!important;transform:none!important;translate:none!important;scale:none!important}
+  .sec-head h2::after{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="container nav" aria-label="Primary">
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#services">Expertise</a></li>
+      <li><a class="nav-link" href="#resume">Experience</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+      <li><a class="btn btn-sm" href="#contact">Hire Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section id="top" class="container hero">
+  <div class="hero-text">
+    <p class="eyebrow intro d1">Hello, I'm</p>
+    <h1 class="intro d2"><span class="accent">Ronilo</span> J. Jinon Jr.</h1>
+    <p class="role intro d3"><span id="typed">Software QA Engineer</span><span class="caret" aria-hidden="true">|</span></p>
+    <p class="lead intro d4">Quality Assurance Engineer with 6+ years of experience ensuring the quality and reliability of web and mobile applications — manual testing, test planning, test case design, defect management and API validation. Currently expanding test automation skills using Playwright.</p>
+    <div class="actions intro d5">
+      <a class="btn" href="assets/Ronilo_Jinon_Jr_QA_Engineer_Resume.pdf" download>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        Download Resume
+      </a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+    <div class="socials intro d6">
+      <a class="social" href="mailto:ronilo29.career@gmail.com" aria-label="Email Ronilo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+      <a class="social" href="tel:+639264285823" aria-label="Call Ronilo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      </a>
+      <!-- To show LinkedIn / GitHub, replace YOUR-PROFILE and remove the comment markers around each link.
+      <a class="social" href="https://www.linkedin.com/in/YOUR-PROFILE" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
+      </a>
+      <a class="social" href="https://github.com/YOUR-PROFILE" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      </a>
+      -->
+    </div>
+  </div>
+  <div class="hero-photo photo-in">
+    <div class="photo-wrap">
+      <div class="orbit" aria-hidden="true"></div>
+      <div class="photo float">
+        <div class="photo-placeholder" aria-hidden="true">
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <span>RJ</span>
+        </div>
+        <!-- Add your photo as assets/photo.jpg — it appears here automatically. -->
+        <img src="assets/photo.jpg" alt="Ronilo J. Jinon Jr., QA Engineer" width="440" height="440" onerror="this.remove()">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="band" aria-label="Highlights">
+  <div class="container stats">
+    <div class="stat reveal zoom"><strong>6+</strong><span>Years of QA experience</span></div>
+    <div class="stat reveal zoom"><strong>3</strong><span>Large Systems tested</span></div>
+    <div class="stat reveal zoom"><strong>12</strong><span>Tools &amp; technologies</span></div>
+    <div class="stat reveal zoom"><strong>Fintech</strong><span>Production releases for GCash</span></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container section about">
+  <div class="about-title reveal left">
+    <p class="eyebrow">About me</p>
+    <h2 class="h2">Professional <span class="accent">Summary</span></h2>
+  </div>
+  <div class="about-body reveal right">
+    <p>Quality Assurance Engineer with 6+ years of experience ensuring the quality and reliability of web and mobile applications. Experienced in manual testing, test planning, test case design, defect management and API validation.</p>
+    <p>Comfortable working in Agile environments and collaborating with developers, product owners and business stakeholders to deliver high-quality software. Currently expanding automation testing skills using Playwright while continuously improving QA processes and product quality.</p>
+    <div class="facts">
+      <div class="fact card"><small>Education</small><b>BS Computer Engineering</b><span>STI College of Davao</span></div>
+      <div class="fact card"><small>Location</small><b>Davao City, Philippines</b><span>QA Engineer</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="band">
+  <div class="container section">
+    <div class="sec-head reveal">
+      <p class="eyebrow">What I do</p>
+      <h2>Areas of <span class="accent">Expertise</span></h2>
+    </div>
+    <div class="grid">
+      <article class="card service reveal">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
+        <h3>Manual &amp; Functional Testing</h3>
+        <p>Functional, regression, smoke, exploratory and user acceptance testing (UAT) before production releases.</p>
+      </article>
+      <article class="card service reveal">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8"/><path d="M8 17h5"/></svg></div>
+        <h3>Test Planning &amp; Test Case Design</h3>
+        <p>Reviewing business requirements and user stories to define test scenarios and acceptance criteria, and designing positive, negative, boundary and data-driven test cases.</p>
+      </article>
+      <article class="card service reveal">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m13 6-2 12"/></svg></div>
+        <h3>API Testing &amp; Validation</h3>
+        <p>Request/response validation and integration testing with Postman, plus database validation and data verification with SQL.</p>
+      </article>
+      <article class="card service reveal">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m8 10 2 2-2 2"/><path d="M13 14h3"/></svg></div>
+        <h3>Test Automation</h3>
+        <p>Web UI test automation with Playwright for repetitive web application test scenarios, E2E and regression testing, managed with Git and GitHub.</p>
+      </article>
+      <article class="card service reveal">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2"/><rect x="16" y="8" width="6" height="12" rx="1.5"/><path d="M6 18h6"/></svg></div>
+        <h3>Cross-Browser &amp; Cross-Device Testing</h3>
+        <p>Consistent application behavior and user experience across browsers and devices using BrowserStack, plus UI/UX review and design validation in Figma.</p>
+      </article>
+      <article class="card service reveal">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0"/><path d="M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></svg></div>
+        <h3>Defect Management &amp; Release Support</h3>
+        <p>Defect tracking in Jira, defect triage, production validation, post-deployment verification and release-readiness reporting.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="container section">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Resume</p>
+    <h2>Work <span class="accent">Experience</span></h2>
+  </div>
+  <div class="timeline">
+    <article class="card job reveal left">
+      <div class="job-meta">
+        <span class="pill solid"><time datetime="2022-03">March 2022</time> – <time datetime="2025-06">June 2025</time></span>
+        <h3>QA Engineer</h3>
+        <span class="company">Yondu | GCash by Mynt</span>
+      </div>
+      <ul>
+        <li>Reviewed business requirements and user stories to identify test scenarios and acceptance criteria.</li>
+        <li>Created and maintained detailed test cases, checklists and test documentation.</li>
+        <li>Executed functional, regression, smoke and user acceptance testing (UAT) before production releases.</li>
+        <li>Conducted API validation using Postman to verify request and response accuracy.</li>
+        <li>Participated in Sprint Planning, Daily Stand-ups, Sprint Reviews and Retrospectives within Agile Scrum teams.</li>
+        <li>Supported release activities by performing production validation and post-deployment verification.</li>
+        <li>Contributed to continuous process improvements by identifying testing gaps and recommending practical QA enhancements.</li>
+      </ul>
+    </article>
+    <article class="card job reveal left">
+      <div class="job-meta">
+        <span class="pill"><time datetime="2021-01">January 2021</time> – <time datetime="2022-03">March 2022</time></span>
+        <h3>QA Engineer</h3>
+        <span class="company">Yondu | Konsi Jempolan by FMC</span>
+      </div>
+      <ul>
+        <li>Conducted exploratory testing to identify unexpected behaviors and defects that may not be covered by predefined test cases.</li>
+        <li>Monitored testing progress and communicated test results, outstanding defects, risks and release readiness to project stakeholders.</li>
+        <li>Reviewed existing test cases and testing processes to identify redundant, outdated or missing test coverage.</li>
+        <li>Supported basic test automation activities using Playwright to automate repetitive web application test scenarios.</li>
+        <li>Contributed to QA knowledge sharing by documenting testing procedures, common defects, lessons learned and best practices.</li>
+      </ul>
+    </article>
+    <article class="card job reveal left">
+      <div class="job-meta">
+        <span class="pill"><time datetime="2018-12">December 2018</time> – <time datetime="2021-01">January 2021</time></span>
+        <h3>QA Engineer</h3>
+        <span class="company">Solo by Foodics</span>
+      </div>
+      <ul>
+        <li>Designed positive, negative, boundary and data-driven test scenarios to improve overall test coverage.</li>
+        <li>Performed cross-browser and cross-device testing to ensure consistent application behavior and user experience.</li>
+        <li>Validated UI elements, business logic, data integrity and system behavior against approved requirements.</li>
+        <li>Investigated reported defects by reproducing issues, analyzing logs and API responses, and providing detailed findings to development teams.</li>
+        <li>Participated in defect triage meetings to assess severity, priority, impact and appropriate resolution timelines.</li>
+      </ul>
+    </article>
+    <article class="edu reveal" aria-labelledby="edu-title">
+      <div><h2 id="edu-title" class="eyebrow" style="margin:0">Education</h2><h3>Bachelor of Science in Computer Engineering</h3></div>
+      <p>STI College of Davao</p>
+    </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="band">
+  <div class="container section">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Skills</p>
+      <h2>Technical <span class="accent">Skills</span></h2>
+    </div>
+    <h3 class="sub-title reveal">Core Competencies</h3>
+    <ul class="chips reveal" aria-label="Core competencies">
+      <li>Manual Testing</li><li>Test Planning</li><li>Test Case Design</li><li>Defect Management</li>
+      <li>API Testing</li><li>Functional Testing</li><li>Regression Testing</li><li>Smoke Testing</li>
+      <li>User Acceptance Testing (UAT)</li><li>Exploratory Testing</li><li>Cross-Browser Testing</li><li>Cross-Device Testing</li>
+      <li>E2E Testing</li><li>Test Automation</li><li>Database Validation</li><li>Production Validation</li>
+      <li>Defect Triage</li><li>Requirements Analysis</li><li>Agile Scrum</li>
+    </ul>
+    <h3 class="sub-title reveal">Tools &amp; Technologies</h3>
+    <div class="grid grid-sm">
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/playwright/playwright-original.svg" alt="Playwright logo" width="30" height="30" loading="lazy"></div><div><b>Playwright</b><span>Web UI test automation, E2E testing, regression testing</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/jira/jira-original.svg" alt="Jira logo" width="30" height="30" loading="lazy"></div><div><b>Jira</b><span>Test/defect tracking, task management, Agile project tracking</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/postman/postman-original.svg" alt="Postman logo" width="30" height="30" loading="lazy"></div><div><b>Postman</b><span>API testing, request/response validation, integration testing</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile" role="img" aria-label="SQL database icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div><div><b>SQL</b><span>Database validation, data verification, test-data investigation</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/browserstack/browserstack-original.svg" alt="BrowserStack logo" width="30" height="30" loading="lazy"></div><div><b>BrowserStack</b><span>Cross-browser and cross-device testing</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/figma/figma-original.svg" alt="Figma logo" width="30" height="30" loading="lazy"></div><div><b>Figma</b><span>UI/UX review, design validation, identifying UI inconsistencies</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/git/git-original.svg" alt="Git logo" width="30" height="30" loading="lazy"></div><div><b>Git</b><span>Version control, source code and test automation management</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/github/github-original.svg" alt="GitHub logo" width="30" height="30" loading="lazy"></div><div><b>GitHub</b><span>Code repository, collaboration, pull requests, test automation management</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.jsdelivr.net/npm/devicon@2.17.0/icons/google/google-original.svg" alt="Google Workspace logo" width="30" height="30" loading="lazy"></div><div><b>Google Workspace</b><span>Test documentation, reporting, collaboration, project communication</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://cdn.simpleicons.org/claude" alt="Claude logo" width="30" height="30" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/simple-icons@15.0.0/icons/claude.svg'"></div><div><b>Claude</b><span>AI assistant for test case drafting, test documentation and QA research</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img src="https://developer.apple.com/assets/elements/icons/testflight/testflight-128x128_2x.png" alt="TestFlight logo" width="30" height="30" loading="lazy"></div><div><b>TestFlight</b><span>iOS beta build installation and testing before App Store release</span></div></div>
+      <div class="card tool reveal"><div class="logo-tile"><img class="crop-left" src="https://www.gstatic.com/marketing-cms/assets/images/e1/8a/041f778e49dd8a553b7fb220f747/consolenavlogo.svg" alt="Google Play Console logo" width="30" height="30" loading="lazy"></div><div><b>Google Play Console</b><span>Android test builds through internal and closed testing tracks</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container section">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Products I've tested</p>
+    <h2>My <span class="accent">Projects</span></h2>
+  </div>
+  <div class="grid">
+    <article class="card project reveal">
+      <a class="shot" href="https://www.gcash.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><span class="co-logo"><img src="https://cdn.prod.website-files.com/6385b55675a0bd614777a5c1/64265cd252f7516ad684940c_Webclip.png" alt="GCash logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.shot').classList.add('nologo')"></span><span class="fallback"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M9 8l2 2 4-4"/></svg></span></a>
+      <div class="project-body">
+        <h3><a href="https://www.gcash.com/" target="_blank" rel="noopener">GCash by Mynt</a></h3>
+        <p>Supported multiple production releases for one of the Philippines' largest fintech platforms through functional, regression, smoke, UAT and API testing.</p>
+        <div class="tags"><span class="tag">Fintech</span><span class="tag">Regression</span><span class="tag">UAT</span><span class="tag">Postman</span></div>
+        <a class="visit" href="https://www.gcash.com/" target="_blank" rel="noopener">Visit gcash.com <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </article>
+    <article class="card project reveal">
+      <a class="shot" href="https://play.google.com/store/apps/details?id=com.fmcke" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><span class="co-logo"><img src="https://play-lh.googleusercontent.com/xjoTiwjg_hjATY47uuRBPfFXCuhAV8yBhcQEgXYovgjnqYIOnln7CFdSm3iCa1ceKQV6qPy2l_bzAnDZO3WkZw=w240-h480-rw" alt="Kongsi Jempolan by FMC app icon" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.shot').classList.add('nologo')"></span><span class="fallback"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 18v3"/><circle cx="11" cy="11" r="3"/><path d="m13.5 13.5 2 2"/></svg></span></a>
+      <div class="project-body">
+        <h3><a href="https://play.google.com/store/apps/details?id=com.fmcke" target="_blank" rel="noopener">Konsi Jempolan by FMC</a></h3>
+        <p>Exploratory testing, test coverage reviews, stakeholder reporting and basic Playwright test automation for repetitive web application scenarios.</p>
+        <div class="tags"><span class="tag">Web</span><span class="tag">Exploratory</span><span class="tag">Playwright</span></div>
+        <a class="visit" href="https://play.google.com/store/apps/details?id=com.fmcke" target="_blank" rel="noopener">View on Google Play <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </article>
+    <article class="card project reveal">
+      <a class="shot" href="https://www.getsolo.io/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><span class="co-logo wide"><img src="https://www.getsolo.io/img/solo.41557a2c.png" alt="Solo logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.shot').classList.add('nologo')"></span><span class="fallback"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="13" height="10" rx="1.5"/><rect x="16" y="8" width="6" height="12" rx="1.5"/><path d="M5 18h7"/></svg></span></a>
+      <div class="project-body">
+        <h3><a href="https://www.getsolo.io/" target="_blank" rel="noopener">Solo by Foodics</a></h3>
+        <p>Cross-browser and cross-device testing, data-driven test design, UI and data-integrity validation, and defect investigation through logs and API responses.</p>
+        <div class="tags"><span class="tag">Cross-Browser</span><span class="tag">BrowserStack</span><span class="tag">Defect Triage</span></div>
+        <a class="visit" href="https://www.getsolo.io/" target="_blank" rel="noopener">Visit getsolo.io <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ATTAINMENTS -->
+<section class="container" aria-labelledby="attain-title" style="padding-bottom:104px">
+  <div class="attain reveal zoom">
+    <h2 id="attain-title">Key Achievements</h2>
+    <ul>
+      <li>Successfully supported multiple production releases for one of the Philippines' largest fintech platforms.</li>
+      <li>Improved defect detection during testing phases through thorough requirement analysis and test coverage.</li>
+      <li>Contributed to quality assurance initiatives that reduced production defects and enhanced user experience.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="band">
+  <div class="container section contact">
+    <div class="contact-info reveal left">
+      <p class="eyebrow">Get in touch</p>
+      <h2 class="h2">Let's build <span class="accent">Reliable</span> web and mobile <span class="accent">Apps</span></h2>
+      <p>Hiring a QA Engineer for your team or product? Send me a message and I'll get back to you.</p>
+      <div class="contact-list">
+        <a class="contact-item" href="mailto:ronilo29.career@gmail.com"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>ronilo29.career@gmail.com</a>
+        <a class="contact-item" href="tel:+639264285823"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>0906-491-4163 <span style="color:var(--text-3)">(+63 906 491 4163)</span></a>
+        <div class="contact-item"><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Davao City, Philippines</div>
+      </div>
+    </div>
+
+    <!-- Messages are delivered to your inbox by FormSubmit (free, no account).
+         The FIRST message sends an activation email to ronilo29.career@gmail.com — click "Activate" once. -->
+    <form class="form reveal right" id="contact-form" action="https://formsubmit.co/ronilo29.career@gmail.com" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="New message from your portfolio">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <label class="hp" aria-hidden="true">Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+      <div class="form-row">
+        <label class="field">Name<input type="text" name="name" placeholder="Your name" autocomplete="name" required></label>
+        <label class="field">Email<input type="email" name="email" placeholder="you@company.com" autocomplete="email" required></label>
+      </div>
+      <label class="field">Subject<input type="text" name="subject" placeholder="Role or project"></label>
+      <label class="field">Message<textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea></label>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+        <button type="submit" class="btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
+          Send Message
+        </button>
+      </div>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer">
+    <span>© <span id="year">2026</span> Ronilo J. Jinon Jr. · QA Engineer · Davao City, Philippines</span>
+  </div>
+</footer>
+
+<a href="#top" class="to-top" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+</a>
+
+<script>
+(function () {
+  var doc = document.documentElement;
+  doc.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var toggle = document.querySelector('.menu-toggle');
+  var links = document.getElementById('nav-links');
+  toggle.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.closest('a')) { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+  });
+
+  // Scroll progress, header shadow, back-to-top
+  var bar = document.querySelector('.progress');
+  var header = document.querySelector('.site-header');
+  var toTop = document.querySelector('.to-top');
+  function onScroll() {
+    var y = window.scrollY;
+    var max = doc.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+    header.classList.toggle('scrolled', y > 20);
+    toTop.classList.toggle('show', y > 600);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Reveal on scroll, staggered within each group
+  var items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    document.querySelectorAll('.sec-head').forEach(function (el) { el.classList.add('in'); });
+  } else {
+    items.forEach(function (el) {
+      var siblings = Array.prototype.filter.call(el.parentElement.children, function (c) { return c.classList.contains('reveal'); });
+      var i = siblings.indexOf(el);
+      if (siblings.length > 1) el.style.transitionDelay = (i % 3) * 0.1 + 's';
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          el.classList.add('in');
+          // clear delay after reveal so hover effects stay snappy
+          setTimeout(function () { el.style.transitionDelay = ''; }, 1200);
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  }
+
+  // Active nav link
+  var sections = ['about','services','resume','skills','projects','contact'].map(function (id) { return document.getElementById(id); });
+  var navLinks = document.querySelectorAll('.nav-link');
+  if ('IntersectionObserver' in window) {
+    var navIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id); });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { navIo.observe(s); });
+  }
+
+  // Typing role
+  var typed = document.getElementById('typed');
+  var roles = ['Software QA Engineer', 'Manual Tester', 'API Tester', 'Mobile App Tester', 'Web App Tester', 'Automation Tester'];
+  if (!reduce) {
+    var r = 0, c = roles[0].length, deleting = false;
+    setTimeout(function tick() {
+      var word = roles[r];
+      if (!deleting) {
+        c++;
+        if (c > word.length) { deleting = true; return setTimeout(tick, 1800); }
+      } else {
+        c--;
+        if (c === 0) { deleting = false; r = (r + 1) % roles.length; }
+      }
+      typed.textContent = roles[r].slice(0, c);
+      setTimeout(tick, deleting ? 45 : 85);
+    }, 2600);
+  }
+
+  // Contact form
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  var btn = form.querySelector('button[type="submit"]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    if (form._honey.value) return;
+    if (!form.checkValidity()) {
+      status.textContent = 'Please fill in your name, a valid email and a message.';
+      status.classList.add('err');
+      var bad = form.querySelector(':invalid'); if (bad) bad.focus();
+      return;
+    }
+    var data = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      subject: form.subject.value.trim(),
+      message: form.message.value.trim(),
+      _subject: 'Portfolio message' + (form.subject.value.trim() ? ': ' + form.subject.value.trim() : ''),
+      _template: 'table',
+      _captcha: 'false',
+      _replyto: form.email.value.trim()
+    };
+    btn.disabled = true;
+    status.textContent = 'Sending…';
+    fetch('https://formsubmit.co/ajax/ronilo29.career@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    }).then(function (res) {
+      return res.json().then(function (json) { return { ok: res.ok, json: json }; });
+    }).then(function (r) {
+      if (r.ok && String(r.json.success) === 'true') {
+        status.textContent = 'Thanks! Your message has been sent — I\'ll get back to you soon.';
+        status.classList.add('ok');
+        form.reset();
+      } else { throw new Error(r.json && r.json.message); }
+    }).catch(function () {
+      status.innerHTML = 'Sorry, the message couldn\'t be sent. Please email me directly at <a href="mailto:ronilo29.career@gmail.com">ronilo29.career@gmail.com</a>.';
+      status.classList.add('err');
+    }).finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>

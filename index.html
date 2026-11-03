@@ -124,6 +124,9 @@ section{scroll-margin-top:84px}
 .fact span{font-size:14px;color:var(--text-2)}
 
 .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.projects-grid{grid-template-columns:1fr}
+@media (min-width:640px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.projects-grid{grid-template-columns:repeat(4,1fr)}}
 .grid-sm{gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
 
 .card{background:var(--surface);border:1px solid var(--line-2);border-radius:16px;transition:transform .35s var(--ease),border-color .35s,box-shadow .35s}
@@ -495,10 +498,10 @@ a.contact-item:hover .ci{transform:translateY(-3px)}
 <!-- PROJECTS -->
 <section id="projects" class="container section">
   <div class="sec-head reveal">
-    <p class="eyebrow">Products I've tested</p>
+    <p class="eyebrow">Products I've tested and built</p>
     <h2>My <span class="accent">Projects</span></h2>
   </div>
-  <div class="grid">
+  <div class="grid projects-grid">
     <article class="card project reveal">
       <a class="shot" href="https://www.gcash.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><span class="co-logo"><img src="https://cdn.prod.website-files.com/6385b55675a0bd614777a5c1/64265cd252f7516ad684940c_Webclip.png" alt="GCash logo" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.shot').classList.add('nologo')"></span><span class="fallback"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M9 8l2 2 4-4"/></svg></span></a>
       <div class="project-body">
@@ -524,6 +527,15 @@ a.contact-item:hover .ci{transform:translateY(-3px)}
         <p>Cross-browser and cross-device testing, data-driven test design, UI and data-integrity validation, and defect investigation through logs and API responses.</p>
         <div class="tags"><span class="tag">Cross-Browser</span><span class="tag">BrowserStack</span><span class="tag">Defect Triage</span></div>
         <a class="visit" href="https://www.getsolo.io/" target="_blank" rel="noopener">Visit getsolo.io <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </article>
+    <article class="card project reveal">
+      <a class="shot nologo" href="https://may-ani-staging.onrender.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><span class="fallback"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span></a>
+      <div class="project-body">
+        <h3><a href="https://may-ani-staging.onrender.com" target="_blank" rel="noopener">May-Ani</a></h3>
+        <p>My personal project: an all-in-one business assistant for agriculture and aquaculture businesses, built around the idea of growing today while sustaining tomorrow.</p>
+        <div class="tags"><span class="tag">Personal Project</span><span class="tag">Web App</span><span class="tag">Agriculture</span><span class="tag">Aquaculture</span></div>
+        <a class="visit" href="https://may-ani-staging.onrender.com" target="_blank" rel="noopener">Visit May-Ani <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><span class="sr-only"> (opens in a new tab)</span></a>
       </div>
     </article>
   </div>
